@@ -10,13 +10,24 @@ n = int(input("inserte un numero: "))
 
 # processing
 
-ud = n%10
-pd = (n%100)//10
+
+
+if (n > 0):
+    ud = n%10
+    pd = (n%100)//10
+    if (ud == pd):
+        rta = "sus dos ultimos numeros son iguales"
+    else:
+        printrta = "sus dos ultimos numero no son iguales"
+
+else :
+    udN = -(n % 10)
+    pdN = -(n % 100)//10
+    if (udN == pdN):
+        rta = "sus dos ultimos numeros son iguales"
+    else:
+        rta= " sus dos ultimos numeros no son iguales"
 
 # output
 
-if ud == pd:
-    print("son iguales sus ultimos digitos")
-
-else:
-    print("no son iguales sus ultimos digitos")
+print(str(rta))
